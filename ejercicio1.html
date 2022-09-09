@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cajas de colores</title>
+</head>
+<style>
+    body {
+        background: #81ecec;
+    }
+
+    div {
+        width: 25%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        background: white;
+    }
+
+    #a {
+        background: #2d3436;
+        color:#2d3436 ;
+    }
+
+    #b {
+        background: #6c5ce7;
+        color:#6c5ce7 ;
+    }
+
+    #c {
+        background: #d63031;
+        color:#d63031 ;
+    }
+
+    #d {
+        background: #e17055;
+        color:#e17055 ;
+    }
+
+    #e {
+        background: #fdcb6e;
+        color:#fdcb6e ;
+    }
+</style>
+</head>
+
+<body>
+    <div>
+        <a onclick="bgchange (id)" id="a"> #2d3436 </a>
+        <a onclick="bgchange (id)" id="b"> #6c5ce7 </a>
+        <a onclick="bgchange (id)" id="c"> #d63031 </a>
+        <a onclick="bgchange (id)" id="d"> #e17055 </a>
+        <a onclick="bgchange (id)" id="e"> #fdcb6e </a>
+
+
+
+
+    </div>
+
+    <script>
+        const bgchange = (id) => {
+            document.body.style.background = document.getElementById(id).innerHTML
+        }
+    </script>
+</body>
+
+</html>
